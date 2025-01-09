@@ -21,6 +21,7 @@ const RecipeFinder = () => {
           apiKey: API_KEY,
           number: 10,
         },
+        
       });
       setRecipes(response.data);
     } catch (error) {
@@ -39,7 +40,7 @@ const RecipeFinder = () => {
   };
 
   return (
-    <section className=' container h-[100vh] mx-auto max-w-[100%] p-4 bg-slate-800'>
+    <section className=' relative inset-0 z-0 container min-h-[100vh] mx-auto max-w-[100%] p-4 '>
                  <div className=" container mx-auto max-w-[100%]  md:max-w-[80%] lg:max-w-[60%] flex flex-col rounded-lg mt-[80px] p-6 bg-slate-950">
                         <div className=" flex flex-col justify-center items-center ">
                             <h1 className="text-4xl font-bold text-center text-slate-200 mb-2">
